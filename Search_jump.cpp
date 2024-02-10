@@ -49,7 +49,7 @@ int main()
         for(int i=0;i<n;i++)
         {
             cin>>num;
-            nums.push_back(num);
+            nums[i]=num;
         }
         cout<<"Enter number to search : ";
         cin>>key;
