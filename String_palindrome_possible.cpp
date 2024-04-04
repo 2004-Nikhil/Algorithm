@@ -13,7 +13,7 @@ bool palindrome(string &st)
 		mp[int(st[i])]++;
 	}
 	int chance=2;
-	for(i=0;i<256;i++)
+	for(int i=0;i<256;i++)
 	{
 		if(mp[i]%2==1)
 		{
@@ -37,7 +37,7 @@ int main()
     {
         fin>>st;
         int possible = palindrome(st);
-        if(possible) fout<<"Yes Possible"endl;
+        if(possible) fout<<"Yes Possible"<<endl;
         else fout<<"Not Possible"<<endl;
     }
     fin.close();
